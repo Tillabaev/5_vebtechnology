@@ -1,0 +1,160 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #fff7ef;
+  color: #2b2b2b;
+}
+
+.header {
+  background: #ff7a00;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+.header h1 {
+  margin: 0;
+}
+
+.container {
+  max-width: 900px;
+  margin: 24px auto;
+  padding: 0 16px;
+}
+
+.card {
+  background: #fff;
+  border: 1px solid #ffd2a6;
+  border-radius: 12px;
+  padding: 20px;
+  margin-bottom: 32px;
+}
+
+h2 {
+  margin-top: 0;
+  color: #d95f00;
+}
+
+form label {
+  display: block;
+  margin-bottom: 14px;
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="file"],
+textarea {
+  display: block;
+  width: 100%;
+  margin-top: 6px;
+  padding: 10px;
+  border: 1px solid #ffb877;
+  border-radius: 8px;
+  font-size: 15px;
+  font-family: inherit;
+}
+
+input:focus,
+textarea:focus {
+  outline: 2px solid #ff7a00;
+}
+
+button {
+  background: #ff7a00;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 20px;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #e66d00;
+}
+
+button:disabled {
+  background: #ffc999;
+  cursor: not-allowed;
+}
+
+button.secondary {
+  background: #fff;
+  color: #ff7a00;
+  border: 1px solid #ff7a00;
+}
+
+.list-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.message {
+  min-height: 20px;
+  margin: 10px 0 0;
+}
+
+.message.error {
+  color: #c62828;
+}
+
+.message.success {
+  color: #2e7d32;
+}
+
+.ads-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 16px;
+}
+
+.ad {
+  background: #fff;
+  border: 1px solid #ffd2a6;
+  border-radius: 12px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.ad img,
+.ad .no-image {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  background: #ffe9d2;
+}
+
+.ad .no-image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #b36a2e;
+}
+
+.ad-body {
+  padding: 14px;
+}
+
+.ad-title {
+  margin: 0 0 6px;
+  font-size: 18px;
+}
+
+.ad-description {
+  margin: 0 0 10px;
+  color: #555;
+}
+
+.ad-price {
+  margin: 0;
+  font-weight: bold;
+  font-size: 18px;
+  color: #ff7a00;
+}
